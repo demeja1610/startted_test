@@ -1,0 +1,70 @@
+.search-banner{
+  background-color: #fff;
+
+  .row{
+    padding-top: 10px;
+    border-radius: 24px;
+    width: 100%;
+    padding: 108px 50px;
+    background-color: $gray;
+    background-image: url("../images/sb.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  &__title{
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 700;
+    padding: 0;
+  }
+
+  .search-form{
+    padding: 0;
+  }
+}
+
+@media(max-width: 768px){
+  .search-banner{
+
+    .container{
+      max-width: 100%;
+      padding: 0 12px;
+    }
+
+    .row{
+      padding: 88px 24px;
+    }
+  }
+}
+
+@media(max-width: 550px){
+  .search-banner{
+
+    &__title{
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+}
+
+@media(max-width: 390px){
+  .search-banner{
+
+    &__title{
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media(max-width: 375px){
+  .search-banner{
+
+    &__title{
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.user{
+
+  &__open{
+    border-radius: 50%;
+    border: 2px solid $v-light-gray;
+    background-color: transparent;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+
+    &:hover{
+      background-color: $v-light-gray;
+    }
+
+    &:focus{
+      border-color: $brand;
+    }
+  }
+
+  &__icon{
+    fill: $brand-black;
+  }
+
+  .user__open{
+    outline: none;
+  }
+}

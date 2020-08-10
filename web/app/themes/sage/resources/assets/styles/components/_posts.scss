@@ -1,0 +1,37 @@
+.posts{
+  padding-top: 60px;
+
+  &__title{
+    padding-right: 0;
+    padding-left: 0;
+    color: #000000;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 35px;
+  }
+
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 768px){
+  .posts{
+    
+    .container{
+      max-width: 100%;
+      padding: 0 12px;
+    }
+  }
+}
+
+@media(max-width: 550px){
+  .posts{
+    padding-top: 34px;
+
+    &__title{
+      margin-bottom: 24px;
+    }
+  }
+}

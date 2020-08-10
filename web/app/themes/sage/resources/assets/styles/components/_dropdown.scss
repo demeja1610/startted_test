@@ -1,0 +1,73 @@
+.dropdown{
+
+  &__toggle{
+    color: $dark-gray;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    border: 2px solid $v-light-gray;
+    background-color: transparent;
+    border-radius: 21px;
+    outline: none;
+    transition: .3s;
+    padding: 10px 22px;
+    display: flex;
+    align-items: center;
+
+    &:hover{
+      background-color: $v-light-gray;
+      box-shadow: none;
+    }
+
+    &:focus{
+      border-color: $brand;
+    }
+  }
+
+  &__wrapper{
+    overflow: hidden;
+    border-radius: 21px;
+    border: 2px solid $v-light-gray;
+    outline: none;
+    padding: 15px 0;
+    display: flex;
+    display: none;
+    z-index: 2;
+
+    &.show{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-bottom: 0;
+  }
+
+  &__item{
+    padding: 10px 25px;
+    cursor: pointer;
+  }
+
+  .dropdown__toggle{
+    outline: none;
+
+    &::after{
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      margin-left: 0.5em;
+      margin-top: 0.2em;
+      width: 12px;
+      height: 9px;
+      background-image: url(../icons/caret.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
